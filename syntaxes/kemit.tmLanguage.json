@@ -1,0 +1,55 @@
+{
+  "name": "KEMIT",
+  "scopeName": "source.kemit",
+  "fileTypes": ["kmt", "kemit"],
+  "patterns": [
+    {"include": "#comments"},
+    {"include": "#strings"},
+    {"include": "#maya-digits"},
+    {"include": "#eg-commands"},
+    {"include": "#su-operators"},
+    {"include": "#ph-delimiters"},
+    {"include": "#ib-identifiers"},
+    {"include": "#assign"},
+    {"include": "#eg-constants"}
+  ],
+  "repository": {
+    "comments": {
+      "name": "comment.line.kemit",
+      "match": "--.*$"
+    },
+    "strings": {
+      "name": "string.quoted.kemit",
+      "begin": "𐤉",
+      "end": "𐤉"
+    },
+    "maya-digits": {
+      "name": "constant.numeric.maya.kemit",
+      "match": "[𝋀𝋁𝋂𝋃𝋄𝋅𝋆𝋇𝋈𝋉]+"
+    },
+    "eg-commands": {
+      "name": "keyword.control.egyptian.kemit",
+      "match": "[𓂀𓃭𓉐𓊪𓌀𓍯𓎛𓆑𓋪𓆣𓄿𓋴]"
+    },
+    "eg-constants": {
+      "name": "constant.language.egyptian.kemit",
+      "match": "[𓋹𓂞𓇯]"
+    },
+    "su-operators": {
+      "name": "keyword.operator.sumerian.kemit",
+      "match": "[𒀭𒁹𒂗𒁺𒀝𒌋𒀸𒁻𒅗𒁾𒂖]"
+    },
+    "ph-delimiters": {
+      "name": "punctuation.phoenician.kemit",
+      "match": "[𐤀𐤁𐤂𐤃𐤄𐤅𐤆𐤇𐤈]"
+    },
+    "ib-identifiers": {
+      "name": "variable.iberian.kemit",
+      "match": "[𐌀𐌁𐌂𐌃𐌄𐌅𐌆𐌇𐌉𐌊𐌋𐌌𐌍𐌎𐌏𐌐𐌑𐌓𐌔𐌕𐌖𐌗𐌘𐌙𐌚𐌛]+"
+    },
+    "assign": {
+      "name": "keyword.operator.assignment.kemit",
+      "match": "←"
+    }
+  }
+}
