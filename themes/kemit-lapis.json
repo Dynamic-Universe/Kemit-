@@ -1,0 +1,40 @@
+{
+  "name": "KEMIT — Lápislázuli",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#080F1E",
+    "editor.foreground": "#C8D8F0",
+    "editor.lineHighlightBackground": "#0F1A30",
+    "editor.selectionBackground": "#1A3060",
+    "editorCursor.foreground": "#60A0F0",
+    "editorLineNumber.foreground": "#1A3050",
+    "editorLineNumber.activeForeground": "#4080C0",
+    "activityBar.background": "#060C18",
+    "activityBar.foreground": "#4080C0",
+    "sideBar.background": "#080F1E",
+    "statusBar.background": "#060C18",
+    "statusBar.foreground": "#4080C0",
+    "tab.activeBackground": "#0F1A30",
+    "tab.inactiveBackground": "#080F1E",
+    "tab.activeForeground": "#80B0F0",
+    "tab.inactiveForeground": "#2A4070",
+    "tab.activeBorderTop": "#4080C0",
+    "terminal.background": "#060C18",
+    "terminal.foreground": "#C8D8F0",
+    "panel.background": "#060C18",
+    "focusBorder": "#4080C0",
+    "input.background": "#0F1A30",
+    "input.foreground": "#C8D8F0"
+  },
+  "tokenColors": [
+    {"scope": "comment","settings": {"foreground": "#1A3050", "fontStyle": "italic"}},
+    {"scope": "keyword.control.egyptian.kemit","settings": {"foreground": "#80C0FF", "fontStyle": "bold"}},
+    {"scope": "keyword.operator.sumerian.kemit","settings": {"foreground": "#60D0C0", "fontStyle": "bold"}},
+    {"scope": "constant.numeric.maya.kemit","settings": {"foreground": "#A0D0FF", "fontStyle": "bold"}},
+    {"scope": "punctuation.phoenician.kemit","settings": {"foreground": "#80B0F0"}},
+    {"scope": "variable.iberian.kemit","settings": {"foreground": "#C8D8F0"}},
+    {"scope": "keyword.operator.assignment.kemit","settings": {"foreground": "#80C0FF", "fontStyle": "bold"}},
+    {"scope": "string","settings": {"foreground": "#80D060"}},
+    {"scope": "constant.language.egyptian.kemit","settings": {"foreground": "#F08050", "fontStyle": "bold"}}
+  ]
+}
