@@ -2,26 +2,78 @@
   "KEMIT — Hola Mundo": {
     "prefix": "hola",
     "body": ["𓂀 \"${1:Hola, Mundo desde KEMIT!}\""],
-    "description": "Imprime un mensaje"
+    "description": "Imprime un saludo (𓂀 = IRET = mostrar)"
   },
   "KEMIT — Variable": {
-    "prefix": ["var", "variable"],
+    "prefix": ["var", "variable", "𓃭"],
     "body": ["𓃭 ${1:nombre} ← ${2:valor}"],
-    "description": "Declarar variable"
+    "description": "Declarar variable (𓃭 = KHET = consagrar)"
+  },
+  "KEMIT — Variable número": {
+    "prefix": ["varn", "varnum"],
+    "body": ["𓃭 ${1:nombre} ← ${2:0}"],
+    "description": "Variable numérica"
+  },
+  "KEMIT — Variable texto": {
+    "prefix": ["vars", "varstr"],
+    "body": ["𓃭 ${1:nombre} ← \"${2:texto}\""],
+    "description": "Variable de texto"
   },
   "KEMIT — Función": {
-    "prefix": ["func", "funcion"],
+    "prefix": ["func", "funcion", "𓉐"],
     "body": ["𓉐 ${1:nombre}(${2:param}) {\n  ${3:-- cuerpo}\n  𓎛 ${4:resultado}\n}"],
-    "description": "Definir función"
+    "description": "Definir función (𓉐 = HUT = templo)"
   },
-  "KEMIT — Condicional": {
-    "prefix": ["if", "si"],
-    "body": ["𓊪 ${1:condicion} {\n  ${2:-- verdadero}\n}"],
-    "description": "Condicional IF"
+  "KEMIT — Función sin parámetros": {
+    "prefix": ["func0"],
+    "body": ["𓉐 ${1:nombre}() {\n  ${2:-- cuerpo}\n  𓎛 ${3:resultado}\n}"],
+    "description": "Función sin parámetros"
+  },
+  "KEMIT — Return": {
+    "prefix": ["ret", "return", "𓎛"],
+    "body": ["𓎛 ${1:valor}"],
+    "description": "Retornar valor (𓎛 = KA = el alma)"
+  },
+  "KEMIT — Si/Sino": {
+    "prefix": ["if", "si", "𓊪"],
+    "body": ["𓊪 ${1:condicion} {\n  ${2:-- verdadero}\n} 𓋴 {\n  ${3:-- falso}\n}"],
+    "description": "Condicional if/else (𓊪 = NEFER, 𓋴 = ELSE)"
+  },
+  "KEMIT — Solo Si": {
+    "prefix": ["ifs", "solo-si"],
+    "body": ["𓊪 ${1:condicion} {\n  ${2:-- código}\n}"],
+    "description": "Condicional sin else"
   },
   "KEMIT — Bucle For": {
-    "prefix": ["for", "bucle"],
+    "prefix": ["for", "bucle", "𓌀"],
     "body": ["𓌀 𓆣 ${1:i} 𓄿 ${2:10} {\n  ${3:-- cuerpo}\n}"],
-    "description": "Bucle FOR"
+    "description": "Bucle for (𓌀 = KHEPER = escarabajo)"
+  },
+  "KEMIT — Mientras While": {
+    "prefix": ["while", "mientras", "𓍯"],
+    "body": ["𓍯 ${1:condicion} {\n  ${2:-- cuerpo}\n}"],
+    "description": "Bucle while (𓍯 = DJED = pilar)"
+  },
+  "KEMIT — Imprimir": {
+    "prefix": ["print", "imprimir", "𓂀"],
+    "body": ["𓂀 ${1:valor}"],
+    "description": "Mostrar valor (𓂀 = IRET = Ojo)"
+  },
+  "KEMIT — Comentario": {
+    "prefix": ["comment", "comentario", "--"],
+    "body": ["-- ${1:Tu comentario aquí}"],
+    "description": "Línea de comentario"
+  },
+  "KEMIT — Programa básico": {
+    "prefix": ["programa", "main"],
+    "body": [
+      "-- ================================================",
+      "-- 𓆣 ${1:Mi Programa KEMIT}",
+      "-- ================================================",
+      "",
+      "𓃭 ${2:nombre} ← \"${3:valor}\"",
+      "𓂀 ${2:nombre}"
+    ],
+    "description": "Plantilla básica de programa"
   }
 }
