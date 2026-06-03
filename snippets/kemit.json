@@ -1,0 +1,27 @@
+{
+  "KEMIT — Hola Mundo": {
+    "prefix": "hola",
+    "body": ["𓂀 \"${1:Hola, Mundo desde KEMIT!}\""],
+    "description": "Imprime un mensaje"
+  },
+  "KEMIT — Variable": {
+    "prefix": ["var", "variable"],
+    "body": ["𓃭 ${1:nombre} ← ${2:valor}"],
+    "description": "Declarar variable"
+  },
+  "KEMIT — Función": {
+    "prefix": ["func", "funcion"],
+    "body": ["𓉐 ${1:nombre}(${2:param}) {\n  ${3:-- cuerpo}\n  𓎛 ${4:resultado}\n}"],
+    "description": "Definir función"
+  },
+  "KEMIT — Condicional": {
+    "prefix": ["if", "si"],
+    "body": ["𓊪 ${1:condicion} {\n  ${2:-- verdadero}\n}"],
+    "description": "Condicional IF"
+  },
+  "KEMIT — Bucle For": {
+    "prefix": ["for", "bucle"],
+    "body": ["𓌀 𓆣 ${1:i} 𓄿 ${2:10} {\n  ${3:-- cuerpo}\n}"],
+    "description": "Bucle FOR"
+  }
+}
