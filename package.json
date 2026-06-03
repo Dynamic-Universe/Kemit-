@@ -1,0 +1,38 @@
+{
+  "name": "kemit-lang",
+  "displayName": "KEMIT — Lengua de los Antiguos v4.0",
+  "description": "Lenguaje de programación con escritura jeroglífica egipcia, sumeria, maya e ibérica",
+  "version": "4.0.0",
+  "publisher": "kemit-lang",
+  "engines": { "vscode": "^1.80.0" },
+  "categories": ["Programming Languages", "Snippets", "Themes"],
+  "keywords": ["kemit", "hieroglyphics", "egypt", "glyph", "programming"],
+  "main": "./src/extension.js",
+  "activationEvents": ["onLanguage:kemit"],
+  "contributes": {
+    "languages": [{
+      "id": "kemit",
+      "aliases": ["KEMIT", "kemit"],
+      "extensions": [".kmt", ".kemit"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "kemit",
+      "scopeName": "source.kemit",
+      "path": "./syntaxes/kemit.tmLanguage.json"
+    }],
+    "themes": [
+      { "label": "KEMIT — Papiro Oscuro", "uiTheme": "vs-dark", "path": "./themes/kemit-papiro-dark.json" },
+      { "label": "KEMIT — Lápislázuli", "uiTheme": "vs-dark", "path": "./themes/kemit-lapis.json" }
+    ],
+    "commands": [
+      { "command": "kemit.run", "title": "KEMIT: Ejecutar archivo" },
+      { "command": "kemit.openRepl", "title": "KEMIT: Abrir REPL" },
+      { "command": "kemit.showKeymap", "title": "KEMIT: Ver mapa de teclado" }
+    ],
+    "keybindings": [
+      { "command": "kemit.run", "key": "ctrl+shift+k", "mac": "cmd+shift+k", "when": "resourceLangId == kemit" },
+      { "command": "kemit.openRepl", "key": "ctrl+shift+r", "mac": "cmd+shift+r" }
+    ]
+  }
+}
